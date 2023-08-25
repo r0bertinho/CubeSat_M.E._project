@@ -9,15 +9,15 @@ cubesat.init()
 # }
 
 # Define the mission parameters{
-mission = os.Mission("C.E.D Miryam Ervilha")
+mission_ = os.Mission("C.E.D Miryam Ervilha")
 
-position = os.Location(
+position_ = os.Location(
   lat=37.7749, 
   lon=-122.4194, 
   alt=500
 )
 
-velocity = os.Velocity(
+velocity_ = os.Velocity(
   x=0, 
   y=0, 
   z=5
