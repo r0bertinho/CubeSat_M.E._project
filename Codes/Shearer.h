@@ -1,0 +1,1 @@
+extern int in_mission;
