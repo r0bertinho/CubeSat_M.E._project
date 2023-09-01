@@ -1,14 +1,13 @@
 #include <studio.h>
 
-void communicateWithSatellite() {
+void communicateWithSatellite()        /* Start by here! pu things like variables, paths, etc... */
+{
     printf("Communicating with satellite...\n");
-    // Implement the actual communication protocol here
-    // For demonstration purposes, we'll print a message.
     printf("Message received from satellite: Hello, Earth!\n");
 }
 
-int main() {
-    // Initialize satellite communication
+int main()    /* This is where we make it actually work! */
+{
     communicateWithSatellite();
 
     return 0;
