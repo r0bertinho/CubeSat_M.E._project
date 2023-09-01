@@ -1,6 +1,6 @@
 #include <studio.h>
 
-void communicateWithSatellite()        /* Start by here! pu things like variables, paths, etc... */
+void communicateWithSatellite()        /* Start by here! Put things like variables, paths, etc... */
 {
     printf("Communicating with satellite...\n");
     printf("Message received from satellite: Hello, Earth!\n");
