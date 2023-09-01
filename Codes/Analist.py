@@ -12,14 +12,14 @@ Path_to_S_and_R = os.path.join(Dir, 'main/Codes/Sender_and_Receiver.c') # Path t
 # Getting information from Shearer.h
 Run = int(subprocess.check_output(["in_mission", Path_to_C_script], universal_newlines=True))
 
-# Loop
+# Loop(put here all of the data analisys)
 while Run == 1:
 
     # Setting variables
     Signal = False
     Time_to_wait = 5  # in seconds 1h = 3600
 
-    # Start timer
+    # Pausing the code before redoing the loop
     sleep(Time_to_wait)
 
     print("True")
