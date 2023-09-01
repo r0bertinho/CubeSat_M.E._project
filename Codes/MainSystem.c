@@ -1,5 +1,8 @@
 /* Notes:
-- Try your best to keep the code clean;
+- Try your best to keep the code clean
+- Keep it with comments for easy understanding
+- Comments are made this way(the slash and star doens't have a space): / *  * /
+- First letter of comments needs to have Caps Lock unless it is part of the code
 */
 #include <stdio.h>
 
