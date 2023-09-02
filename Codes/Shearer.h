@@ -3,5 +3,13 @@
 - Feel free to get here every variable you think is important
 - Don't forget to put only important things and always revise this file rhamon!
 */
+#ifndef Shearer_h
+#define Shearer_h
 
+/* put variables got from MainSystem.c */
 extern int in_mission;
+
+/* put variables got from Sender_and_receiver */
+
+
+#endif
