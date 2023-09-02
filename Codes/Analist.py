@@ -15,7 +15,7 @@ Run = int(check_output(["in_mission", Path_to_C_script], universal_newlines=True
 
 
 #Here will go the data analisys and generating a file with it
-def Analise_data():
+def analise_data():
     pass
 
 
