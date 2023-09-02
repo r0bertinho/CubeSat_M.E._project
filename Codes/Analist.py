@@ -29,4 +29,9 @@ while Run == 1:
     # Pausing the code before redoing the loop
     sleep(Time_to_wait)
 
-    print("True")
+    # Put here something to know the code ended or make the loop redo some times
+    
+
+
+# Here we will export the finished product for the Shearer.h
+
