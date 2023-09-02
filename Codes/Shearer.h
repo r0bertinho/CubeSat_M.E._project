@@ -6,10 +6,10 @@
 #ifndef Shearer_h
 #define Shearer_h
 
-/* put variables got from MainSystem.c */
+/* Put variables got from MainSystem.c */
 extern int in_mission;
 
-/* put variables got from Sender_and_receiver */
+/* Put variables got from Sender_and_receiver */
 
 
 #endif
