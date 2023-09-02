@@ -14,7 +14,7 @@ Path_to_S_and_R = join(Dir, 'main/Codes/Sender_and_Receiver.c') # Path to the re
 Run = int(check_output(["in_mission", Path_to_C_script], universal_newlines=True))
 
 
-#here will go the data analisys and generating a file with it
+#Here will go the data analisys and generating a file with it
 def Analise_data():
     pass
 
