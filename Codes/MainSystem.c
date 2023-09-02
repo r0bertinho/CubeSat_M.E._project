@@ -6,6 +6,7 @@
 - First letter of comments needs to have Caps Lock unless it is part of the code or a number
 */
 #include <stdio.h>
+#include <Shearer.h>
 
 
 int check_init()        /* Check if program will be initated */
