@@ -32,7 +32,7 @@ int main()        /* Main program where the code will be */
     time_loop_wait = 100;
     printf("started! \n");
     
-    while (time_loop_wait > 100) {time_loop_wait--;}
+    while (time_loop_wait > 100) {time_loop_wait--;} /* will make the code loop before running again */
     }
 
     printf("ended!");        /* Returning false */
