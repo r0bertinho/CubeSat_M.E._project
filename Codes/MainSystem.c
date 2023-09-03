@@ -26,9 +26,15 @@ int main()        /* Main program where the code will be */
 {
     int in_mission = check_init();        /* Sees the result returned by check_init() */
 
-    if (in_mission == 1) {printf("started! \n");}        /* Main code goes here, but change it for a loop rhamon! */
-    else {return 0;}
+    while (in_mission == 1)        /* Main code goes here */
+    {
+    int time_loop_wait;
+    time_loop_wait = 100;
+    printf("started! \n");
+    
+    while (time_loop_wait > 100) {time_loop_wait--;}
+    }
 
     printf("ended!");        /* Returning false */
-    return 0;        /* In case check_init() isn't started or the program is terminated */
+    return 0;        /* In case check_init() isn't runned or the program is terminated */
 }
