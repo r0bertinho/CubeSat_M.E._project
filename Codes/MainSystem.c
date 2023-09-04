@@ -15,10 +15,18 @@ int check_init()        /* Check if program will be initated */
     printf("Are we in mission? (1 for true, 0 for false)  ");
     scanf("%d", &in_mission);        /* Storing the number given */
 
-    if (in_mission == 0) {printf("ok, finishing!"); return 0;}        /* If false, terminate */
-    else if (in_mission == 1) {return in_mission;}        /* Returning true */
+    if (in_mission == 0)        /* If false, terminate */
+    {
+        printf("ok, finishing!");
+        return 0;
+    }
+    
+    else if (in_mission == 1)        /* Returning true */
+    {
+        return in_mission;
+    }        
 
-    return 0;    /* If the input isn't 1 or 0 */
+    return 0;        /* If the input isn't 1 or 0 */
 }
 
 
@@ -28,21 +36,15 @@ int main()        /* Main program where the code will be */
 
     while (in_mission == 1)        /* Main code goes here */
     {
-        /* Defining variables */
-        int time_loop_wait;
-        time_loop_wait = 100;
+                /* Defining variables */
+        int temperature;
     
-        /* What will be runned */
+                /* What will be runned */
         printf("started! \n");
         
-        /* See if the in_mission is still true by getting the value from Shearer.h */
+                /* See if the in_mission is still true by getting the value from Shearer.h */
+        in_mission = in_mission;
         
-    
-        /* Last loop before running again */
-        while (time_loop_wait > 100)
-        {
-            time_loop_wait--;
-        }
     }
 
     printf("ended!");        /* Returning false */
