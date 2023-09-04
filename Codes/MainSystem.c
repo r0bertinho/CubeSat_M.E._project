@@ -39,7 +39,10 @@ int main()        /* Main program where the code will be */
     
 
     /* Last loop before running again */
-    while (time_loop_wait > 100) {time_loop_wait--;}
+    while (time_loop_wait > 100)
+    {
+        time_loop_wait--;
+    }
     }
 
     printf("ended!");        /* Returning false */
