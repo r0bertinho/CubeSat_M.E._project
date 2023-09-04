@@ -28,21 +28,21 @@ int main()        /* Main program where the code will be */
 
     while (in_mission == 1)        /* Main code goes here */
     {
-    /* Defining variables */
-    int time_loop_wait;
-    time_loop_wait = 100;
+        /* Defining variables */
+        int time_loop_wait;
+        time_loop_wait = 100;
     
-    /* What will be runned */
-    printf("started! \n");
+        /* What will be runned */
+        printf("started! \n");
+        
+        /* See if the in_mission is still true by getting the value from Shearer.h */
+        
     
-    /* See if the in_mission is still true by getting the value from Shearer.h */
-    
-
-    /* Last loop before running again */
-    while (time_loop_wait > 100)
-    {
-        time_loop_wait--;
-    }
+        /* Last loop before running again */
+        while (time_loop_wait > 100)
+        {
+            time_loop_wait--;
+        }
     }
 
     printf("ended!");        /* Returning false */
