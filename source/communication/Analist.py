@@ -6,9 +6,10 @@ from os import getcwd
 
 # Setting basis
 Dir = getcwd()
-Path_to_Shearer = join(Dir, 'main/Codes/Shearer.h') # Path to the shearer
-Path_to_C_script = join(Dir, 'main/Codes/MainSystem.c') # Path to the main code
-Path_to_S_and_R = join(Dir, 'main/Codes/Sender_and_Receiver.c') # Path to the receptor
+Path_to_C_script = join(Dir, 'source/MainSystem.c') # Path to the main code
+Path_to_Shearer = join(Dir, 'source/utilities/Shearer.h') # Path to the shearer
+Path_to_Get_Sensor = join(Dir, 'source/sensors/GetSensors.c') # Path to the receptor
+Path_to_S_and_R = join(Dir, 'source/communication/Sender_and_Receiver.c') # Path to the receptor
 
 # Getting information from Shearer.h
 Run = int(check_output(["in_mission", Path_to_C_script], universal_newlines=True))
