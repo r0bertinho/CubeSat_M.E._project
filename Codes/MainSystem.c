@@ -30,7 +30,7 @@ int check_init()        /* Check if program will be initated */
 }
 
 
-int main()        /* Main program where the code will be */
+void main()        /* Main program where the code will be */
 {
     int in_mission = check_init();        /* Sees the result returned by check_init() */
 
