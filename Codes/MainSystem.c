@@ -9,30 +9,21 @@
 #include <Shearer.h>
 
 
-int check_init()        /* Check if program will be initated */
+void check_init(int *in_mission)        /* Check if program will be initated */
 {
-    int in_mission;        /* 1 for true, 0 for false */
-    printf("Are we in mission? (1 for true, 0 for false)  ");
-    scanf("%d", &in_mission);        /* Storing the number given */
-
-    if (in_mission == 0)        /* If false, terminate */
-    {
-        printf("ok, finishing!");
-        return 0;
-    }
-    
-    else if (in_mission == 1)        /* Returning true */
-    {
-        return in_mission;
-    }        
-
-    return 0;        /* If the input isn't 1 or 0 */
+    printf("Are we in mission? (1 for true, 0 for false)  ");        /* 1 for true, 0 for false */
+    scanf("%d", in_mission);        /* Storing the number given */
 }
 
-
-void main()        /* Main program where the code will be */
+void information_base()        /* Base de dados do stélite para o main() */
 {
-    int in_mission = check_init();        /* Sees the result returned by check_init() */
+    
+}
+
+int main()        /* Main program where the code will be */
+{
+    int in_mission;        /* Calls the variable of in_mission */
+    check_init(&in_mission);        /* Sees the result returned by check_init() */
 
     while (in_mission == 1)        /* Main code goes here */
     {
@@ -47,6 +38,6 @@ void main()        /* Main program where the code will be */
         
     }
 
-    printf("ended!");        /* Returning false */
+    printf("ended!");        /* Returning false or ending the program */
     return 0;        /* In case check_init() isn't runned or the program is terminated */
 }
