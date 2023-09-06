@@ -7,7 +7,7 @@ void communicateWithSatellite()        /* Start by here! Put things like variabl
     printf("Message received from satellite: Hello, Earth!\n");
 }
 
-int main()    /* This is where we make it actually work! */
+int main()        /* This is where we make it actually work! */
 {
     communicateWithSatellite();
 
