@@ -41,7 +41,7 @@ void controlComponents(ComponentControl *components) {
     components->communicationEnabled = true;
 }
 
-int m_n_GetSensor() {
+void m_n_GetSensor() {
             /* Initialize sensor and component data structures */
     EnvironmentalSensor envSensor;
     PowerSensor powerSensor;
