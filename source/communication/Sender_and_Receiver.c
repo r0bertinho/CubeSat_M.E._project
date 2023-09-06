@@ -2,12 +2,6 @@
 #include "Shearer.h"
 
 
-void G_Shearer(*in_mission)
-{
-    *in_mission = Shearer.h
-}
-
-
 void m_Sender_n_receiver()
 {
     while (in_mission == 1)
