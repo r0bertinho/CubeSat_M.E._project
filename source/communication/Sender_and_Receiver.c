@@ -1,15 +1,29 @@
 #include <studio.h>
 #include "Shearer.h"
 
-void communicateWithSatellite()        /* Start by here! Put things like variables, paths, etc... */
+void G_Shearer(*in_mission)
 {
-    printf("Communicating with satellite...\n");
-    printf("Message received from satellite: Hello, Earth!\n");
+    *in_mission = Shearer.h
 }
 
-int main()        /* This is where we make it actually work! */
+int main()
 {
-    communicateWithSatellite();
-
+    int in(
+    while (in_mission == 1)
+    {
+        void communicateWithSatellite()        /* Start by here! Put things like variables, paths, etc... */
+        {
+            printf("Communicating with satellite...\n");
+            printf("Message received from satellite: Hello, Earth!\n");
+        }
+            
+        int m_in_main()        /* This is where we make it actually work! */
+        {
+            communicateWithSatellite();
+        
+            return 0;
+        }
+        return 0;
+    }
     return 0;
 }
