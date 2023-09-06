@@ -8,5 +8,5 @@ To this day, the project include as members:
 - Rhamon;
 - Isadora;
 - Juliano;
-- Kay;
-- Mari.
+- Mari;
+- Kay.
