@@ -6,9 +6,8 @@ void G_Shearer(*in_mission)
     *in_mission = Shearer.h
 }
 
-int m_Sender_n_receiver()
+void m_Sender_n_receiver()
 {
-    int in(
     while (in_mission == 1)
     {
         void communicateWithSatellite()        /* Start by here! Put things like variables, paths, etc... */
