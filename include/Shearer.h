@@ -12,4 +12,7 @@ extern int in_mission;
 		/* Put variables got from Sender_and_receiver */
 
 
+		/* Put variables got from Sender_and_receiver */
+
+
 #endif
