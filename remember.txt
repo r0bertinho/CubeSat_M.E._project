@@ -1,7 +1,7 @@
-SaR:
+Sender_and_receiver:
 
 
-GS:
+GetSensor:
 float temperature
 float humidity
 float pressure
@@ -14,5 +14,5 @@ bool communicationEnabled
 
 
 
-Main:
+MainSystem:
 int in_mision
