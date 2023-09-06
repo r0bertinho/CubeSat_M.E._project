@@ -1,0 +1,18 @@
+SaR:
+
+
+GS:
+float temperature
+float humidity
+float pressure
+float voltage
+float current
+float power
+bool cameraEnabled
+bool thrustersEnabled
+bool communicationEnabled
+
+
+
+Main:
+int in_mision
