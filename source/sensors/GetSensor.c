@@ -71,7 +71,7 @@ int main() {
         printf("Power: %.2f W\n", powerSensor.power);
 
         /* Delay between sensor readings and component control */
-        usleep(1000); /* Sleep for 0.5 second */
+        usleep(500000); /* Sleep for 0.5 second */
     }
 
     return 0;
