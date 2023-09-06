@@ -6,7 +6,7 @@ void G_Shearer(*in_mission)
     *in_mission = Shearer.h
 }
 
-int main()
+int m_Sender_n_receiver()
 {
     int in(
     while (in_mission == 1)
