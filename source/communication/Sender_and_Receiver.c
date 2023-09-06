@@ -1,5 +1,5 @@
 #include <studio.h>
-#include <Shearer.h>
+#include "Shearer.h"
 
 void communicateWithSatellite()        /* Start by here! Put things like variables, paths, etc... */
 {
