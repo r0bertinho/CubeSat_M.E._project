@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
+#include "Shearer.h"
 
 /* Define sensor and component interfaces */
 typedef struct {
