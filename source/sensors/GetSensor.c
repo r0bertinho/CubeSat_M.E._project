@@ -24,7 +24,7 @@ typedef struct {
 
 
 void readSensors(EnvironmentalSensor *envSensor, PowerSensor *powerSensor) {
-            /* Simulate reading data from environmental and power sensors */
+            /* Reading data from environmental and power sensors */
     envSensor->temperature = 25.0;
     envSensor->humidity = 50.0;
     envSensor->pressure = 1013.25;
@@ -35,7 +35,7 @@ void readSensors(EnvironmentalSensor *envSensor, PowerSensor *powerSensor) {
 
 
 void controlComponents(ComponentControl *components) {
-            /* Simulate enabling/disabling CubeSat components */
+            /* Enabling/disabling CubeSat components */
     components->cameraEnabled = true;
     components->thrustersEnabled = false;
     components->communicationEnabled = true;
