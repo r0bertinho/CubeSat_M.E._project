@@ -23,7 +23,5 @@ void m_Sender_n_receiver()
 
             return 0;
         }
-        return 0;
     }
-    return 0;
 }
