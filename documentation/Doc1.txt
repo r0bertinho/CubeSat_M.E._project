@@ -1,6 +1,6 @@
-..starting at 05/09/2023  19:07..
+..starting at 01/09/2023 to 30/09/2023..
 
 Up to date, this repository has:
--	Structure separed in 3 parts inside source;
--	Only source is edited to have something useful
+-	Structure separed in 3 principal parts inside source;
+-	Only source and data were edited to have something useful
 -	Only one programmer(C, python) helped until now
