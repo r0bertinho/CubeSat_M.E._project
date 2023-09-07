@@ -22,8 +22,8 @@ void information_base(float *Cs, float *A)        /* Base de dados do stélite p
         A = Altitude;
      */
 
-    *Cs = 0.0
-    *A = 0.0
+    Cs = 0.0
+    A = 0.0
 }
 
 int main()        /* Main program where the code will be */
