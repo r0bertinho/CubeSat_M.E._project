@@ -7,7 +7,7 @@
 - First letter of comments needs to have Caps Lock unless it is part of the code or a number
 */
 #include <stdio.h>
-#include "Shearer.h"
+#include <CubeSat_M.E._project/include/Shearer.h>
 
 
 void check_init(int *in_mission)        /* Check if program will be initated */
