@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
-#include "Shearer.h"
+#include <CubeSat_M.E._project/include/Shearer.h>
 
         /* Define sensor and component interfaces */
 typedef struct {
@@ -44,38 +44,39 @@ void controlComponents(ComponentControl *components) {
     components->communicationEnabled = true;
 }
 
-void m_n_GetSensor() {
-            /* Initialize sensor and component data structures */
-    EnvironmentalSensor envSensor;
-    PowerSensor powerSensor;
-    ComponentControl components;
+while (in_mission == 1)
+{
+	void m_n_GetSensor() {
+        	    /* Initialize sensor and component data structures */
+  	  EnvironmentalSensor envSensor;
+  	  PowerSensor powerSensor;
+ 	   ComponentControl components;
 
-            /* Main loop */
-    while (1) {
-                /* Read sensor data */
-        readSensors(&envSensor, &powerSensor);
+          	  /* Main loop */
+  	  while (1) {
+         	       /* Read sensor data */
+     	   readSensors(&envSensor, &powerSensor);
 
-                /* Control CubeSat components based on sensor data */
-        if (envSensor.temperature > 30.0) {
-            components.cameraEnabled = false;
-        } else {
-            components.cameraEnabled = true;
-        }
+            	    /* Control CubeSat components based on sensor data */
+        	if (envSensor.temperature > 30.0) {
+            	components.cameraEnabled = false;
+        	} else {
+            	components.cameraEnabled = true;
+        	}
 
-                /* Send control commands to CubeSat components */
-        controlComponents(&components);
+        	        /* Send control commands to CubeSat components */
+       	 controlComponents(&components);
 
-                /* Print sensor and component data */
-        printf("Temperature: %.2f°C\n", envSensor.temperature);
-        printf("Humidity: %.2f%%\n", envSensor.humidity);
-        printf("Pressure: %.2f hPa\n", envSensor.pressure);
-        printf("Voltage: %.2f V\n", powerSensor.voltage);
-        printf("Current: %.2f A\n", powerSensor.current);
-        printf("Power: %.2f W\n", powerSensor.power);
-
-                /* Delay between sensor readings and component control */
-        usleep(500000);        /* Sleep for 0.5 second */
-    }
-
-    return 0;
+        	        /* Print sensor and component data */
+        	printf("Temperature: %.2f°C\n", envSensor.temperature);
+        	printf("Humidity: %.2f%%\n", envSensor.humidity);
+    	    printf("Pressure: %.2f hPa\n", envSensor.pressure);
+	        printf("Voltage: %.2f V\n", powerSensor.voltage);
+ 	       printf("Current: %.2f A\n", powerSensor.current);
+ 	       printf("Power: %.2f W\n", powerSensor.power);
+	
+  	              /* Delay between sensor readings and component control */
+ 	       usleep(500000);        /* Sleep for 0.5 second */
+ 	   }
+	}
 }
