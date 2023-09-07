@@ -23,4 +23,10 @@ extern bool communicationEnabled
 		/* Put variables got from Sender_and_receiver.c */
 
 
+		/* Define functions here to be used in other files */
+
+
+		/* Here we'll define variables of this file */
+
+
 #endif
