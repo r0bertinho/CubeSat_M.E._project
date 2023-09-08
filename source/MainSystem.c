@@ -16,7 +16,7 @@ void check_init(int *in_mission)        /* Check if program will be initated */
     scanf("%d", in_mission);        /* Storing the number given */
 }
 
-void information_base(float *Cs, float *A)        /* Base de dados do stélite para o main() */
+void information_base(double *Cs, double *A)        /* Base de dados do stélite para o main() */
 {
     /*        (if the value is equal to 0.0, it will be changed)
         Cs = Cruise Speed;
