@@ -16,3 +16,5 @@ bool communicationEnabled
 
 MainSystem:
 int in_mision
+float Cs
+float A
