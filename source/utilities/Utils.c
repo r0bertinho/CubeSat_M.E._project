@@ -16,8 +16,8 @@ int main()		/* Initialize CubeSat hardware and sensors */
  		   /* Main loop for CubeSat operations */
     while (in_mission == 1)		/* Read sensor data (e.g., temperature, pressure, etc.) */
 	{
-        double temperature = readTemperatureSensor();
-        double pressure = readPressureSensor();
+        double temperature = readTemperatureSensor(/* placeholder */);
+        double pressure = readPressureSensor(/* placeholder */);
 
       		  /* Process sensor data and make decisions */
         if (temperature > THRESHOLD_TEMPERATURE)		/* Implement corrective action here */
@@ -30,11 +30,11 @@ int main()		/* Initialize CubeSat hardware and sensors */
             printf("Low pressure detected. Initiating safety protocols...\n");
         }
 
-        controlThrusters();		/* Control CubeSat components (e.g., thrusters, solar panels, etc.) */
+        controlThrusters(/* placeholder */);		/* Control CubeSat components (e.g., thrusters, solar panels, etc.) */
 
         sleep(SLEEP_INTERVAL_SECONDS);		/* Sleep for a while before the next iteration */
     }
 
-    finalizeCubeSat();		/* Cleanup and finalize CubeSat operations */
+    finalizeCubeSat(/* placeholder */);		/* Cleanup and finalize CubeSat operations */
     return 0;
 }
