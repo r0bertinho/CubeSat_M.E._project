@@ -2,6 +2,7 @@
 - This file uses  Tabs / 4 / No wrap
 */
 #include <stdio.h>
+#include <unistd.h>
 #include "Shearer.h"
 
 
@@ -23,5 +24,6 @@ void m_Sender_n_receiver()
 
             return 0;
         }
+        usleep(SLEEP_INTERVAL_SECONDS_U)
     }
 }
