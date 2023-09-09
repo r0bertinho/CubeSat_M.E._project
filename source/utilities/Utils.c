@@ -2,6 +2,7 @@
 - This file uses  Tabs / 4 / No wrap
 */
 #include <stdio.h>
+#include <unistd.h>
 #include "Shearer.h"
 
 
@@ -32,7 +33,7 @@ int m_in_U()		/* Initialize CubeSat hardware and sensors */
 
         controlThrusters(/* placeholder */);		/* Control CubeSat components (e.g., thrusters, solar panels, etc.) */
 
-        sleep(SLEEP_INTERVAL_SECONDS);		/* Sleep for a while before the next iteration */
+        sleep(SLEEP_INTERVAL_SECONDS_U);		/* Sleep for a while before the next iteration */
     }
 
     finalizeCubeSat(/* placeholder */);		/* Cleanup and finalize CubeSat operations */
