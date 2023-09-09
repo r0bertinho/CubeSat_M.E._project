@@ -11,15 +11,15 @@
 extern int in_mission;
 
 		/* Put variables got from GetSensor.c */
-extern float temperature
-extern float humidity
-extern float pressure
-extern float voltage
-extern float current
-extern float power
-extern bool cameraEnabled
-extern bool thrustersEnabled
-extern bool communicationEnabled
+extern bool communicationEnabled;
+extern bool thrustersEnabled;
+extern bool cameraEnabled;
+extern float temperature;
+extern float humidity;
+extern float pressure;
+extern float voltage;
+extern float current;
+extern float power;
 
 		/* Put variables got from Sender_and_receiver.c */
 
