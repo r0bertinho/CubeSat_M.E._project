@@ -5,7 +5,7 @@
 #include "Shearer.h"
 
 
-int main()		/* Initialize CubeSat hardware and sensors */
+int m_in_U()		/* Initialize CubeSat hardware and sensors */
 {
     if (initializeCubeSat() != 0)
 	{
