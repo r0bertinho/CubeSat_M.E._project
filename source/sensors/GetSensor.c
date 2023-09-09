@@ -3,6 +3,7 @@
 */
 #include <stdio.h>
 #include <stdint.h>
+#include <unistd.h>
 #include <stdbool.h>
 #include "Shearer.h"
 
@@ -76,7 +77,7 @@ while (in_mission == 1)
  	       printf("Power: %.2f W\n", powerSensor.power);
 	
   	              /* Delay between sensor readings and component control */
- 	       usleep(500000);        /* Sleep for 0.5 second */
+ 	       usleep(SLEEP_INTERVAL_SECONDS_U);
  	   }
 	}
 }
