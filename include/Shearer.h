@@ -28,6 +28,7 @@ extern float power;
 
 
 		/* Here we'll define variables of this file */
-
+extern int SLEEP_INTERVAL_SECONDS_U;
+extern int SLEEP_INTERVAL_SECONDS;
 
 #endif
