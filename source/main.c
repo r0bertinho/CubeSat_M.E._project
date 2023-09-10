@@ -13,7 +13,7 @@
 
 void check_init(int *in_mission)        /* Check if program will be initated */
 {
-    printf("Are we in mission? (1 for true, 0 for false)  ");        /* 1 for true, 0 for false */
+    printf("Are we in mission?\n(1 for true, 0 for false)  ");        /* 1 for true, 0 for false */
     scanf("%d", in_mission);        /* Storing the number given */
     
     printf("What will be the sleep time?");
