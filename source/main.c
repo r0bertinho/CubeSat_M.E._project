@@ -11,13 +11,13 @@
 #include "Shearer.h"
 
 
-void check_init(int *in_mission)        /* Check if program will be initated */
+void check_init()        /* Check if program will be initated */
 {
     printf("Are we in mission?\n(1 for true, 0 for false)  ");        /* 1 for true, 0 for false */
-    scanf("%d", in_mission);        /* Storing the number given */
+    scanf("%d", &in_mission);        /* Storing the number given */
     
     printf("What will be the sleep time?");
-    scanf("%lf", SLEEP_INTERVAL_SECONDS_U);
+    scanf("%lf", &SLEEP_INTERVAL_SECONDS_U);
 }
 
 void information_base(double *Cs, double *A)        /* Base de dados do stélite para o main() */
@@ -33,8 +33,7 @@ void information_base(double *Cs, double *A)        /* Base de dados do stélite
 
 int main()        /* Main program where the code will be */
 {
-    int in_mission;        /* Calls the variable of in_mission */
-    check_init(&in_mission);        /* Sees the result returned by check_init() */
+    int in_mission;
 
     while (in_mission == 1)        /* Main code goes here */
     {
