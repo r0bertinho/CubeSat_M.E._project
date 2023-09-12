@@ -15,6 +15,12 @@ int check_init()        /* Check if program will be initated */
 {
     printf("Are we in mission?\n(1 for true, 0 for false)  ");        /* 1 for true, 0 for false */
     scanf("%d", &in_mission);        /* Storing the number given */
+
+    while (&in_mission == NULL)
+    {
+        scanf("%d", &in_mission);
+        usleep(SLEEP_INTERVAL_SECONDS_U);
+    }
     
     printf("What will be the sleep time?");
     scanf("%lf", &SLEEP_INTERVAL_SECONDS_U);
