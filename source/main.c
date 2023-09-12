@@ -12,50 +12,50 @@
 #include "Shearer.h"
 
 
-int check_init ()        /* Check if program will be initated */
+int check_init()        /* Check if program will be initated */
 {
 	int in_mission;
 	
-  printf("Are we in mission?\n(1 for true, 0 for false)  ");        /* 1 for true, 0 for false */
-  scanf("%d", &in_mission);        /* Storing the number given */
+    printf("Are we in mission?\n(1 for true, 0 for false)  ");        /* 1 for true, 0 for false */
+    scanf("%d", &in_mission);        /* Storing the number given */
 
-  if (&in_mission != 1); (&in_mission != 0);
-  {
-    printf ("\nTry again\n");
-    exit(0);
-  }
+    if (&in_mission != 1); (&in_mission != 0);
+        {
+       		printf ("\nTry again\n");
+        	exit(0);
+        }
     
-  printf("What will be the sleep time?");
-  scanf("%lf", &SLEEP_INTERVAL_SECONDS_U);
-  return in_mission;
+    printf("What will be the sleep time?");
+    scanf("%lf", &SLEEP_INTERVAL_SECONDS_U);
+    return in_mission;
 }
 
-void information_base ()        /* Base de dados do stélite para o main() */
+void information_base()        /* Base de dados do stélite para o main() */
 {
-  /*
-    Cs = Cruise Speed;
-    A = Altitude;
-  */
+    /*
+        Cs = Cruise Speed;
+        A = Altitude;
+     */
 
     &Cs = 0;
     &A = 0;
 }
 
-int main ()        /* Main program where the code will be */
+int main()        /* Main program where the code will be */
 {
 	int in_mission;
 	
-  while (&in_mission == 1)        /* Main code goes here */
-  {
-    		/* Defining variables */
-    int temperature;
-  
-        /* What will be runned */
-    printf("started! \n");
+    while (&in_mission == 1)        /* Main code goes here */
+    {
+                /* Defining variables */
+        int temperature;
+    
+                /* What will be runned */
+        printf("started! \n");
         
-    usleep(&SLEEP_INTERVAL_SECONDS_U);
-  }
+        usleep(&SLEEP_INTERVAL_SECONDS_U);
+    }
 
-  printf("ended!");        /* Returning false or ending the program */
-  return 0;        /* In case check_init() isn't runned or the program is terminated */
+    printf("ended!");        /* Returning false or ending the program */
+    return 0;        /* In case check_init() isn't runned or the program is terminated */
 }
