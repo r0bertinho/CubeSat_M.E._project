@@ -1,0 +1,89 @@
+In file included from main.c:12:
+Shearer.h:14:8: error: unknown type name ‘bool’
+   14 | extern bool communicationEnabled;
+      |        ^~~~
+Shearer.h:15:8: error: unknown type name ‘bool’
+   15 | extern bool thrustersEnabled;
+      |        ^~~~
+Shearer.h:16:8: error: unknown type name ‘bool’
+   16 | extern bool cameraEnabled;
+      |        ^~~~
+main.c: In function ‘check_init’:
+main.c:21:21: warning: comparison between pointer and integer
+   21 |     if (&in_mission != 1); (&in_mission != 0); {
+      |                     ^~
+main.c:27:14: warning: format ‘%lf’ expects argument of type ‘double *’, but argument 2 has type ‘int *’ [-Wformat=]
+   27 |     scanf("%lf", &SLEEP_INTERVAL_SECONDS_U);
+      |            ~~^   ~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |   |
+      |              |   int *
+      |              double *
+      |            %d
+main.c: In function ‘information_base’:
+main.c:37:6: error: ‘Cs’ undeclared (first use in this function)
+   37 |     &Cs = 0;
+      |      ^~
+main.c:37:6: note: each undeclared identifier is reported only once for each function it appears in
+main.c:38:6: error: ‘A’ undeclared (first use in this function)
+   38 |     &A = 0;
+      |      ^
+main.c: In function ‘main’:
+main.c:45:24: warning: comparison between pointer and integer
+   45 |     while (&in_mission == 1) {        /* Main code goes here */
+      |                        ^~
+main.c:52:16: warning: passing argument 1 of ‘usleep’ makes integer from pointer without a cast [-Wint-conversion]
+   52 |         usleep(&SLEEP_INTERVAL_SECONDS_U);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                |
+      |                int *
+In file included from main.c:10:
+/usr/include/unistd.h:480:33: note: expected ‘__useconds_t’ {aka ‘unsigned int’} but argument is of type ‘int *’
+  480 | extern int usleep (__useconds_t __useconds);
+      |                    ~~~~~~~~~~~~~^~~~~~~~~~
+In file included from Utils.c:6:
+Shearer.h:14:8: error: unknown type name ‘bool’
+   14 | extern bool communicationEnabled;
+      |        ^~~~
+Shearer.h:15:8: error: unknown type name ‘bool’
+   15 | extern bool thrustersEnabled;
+      |        ^~~~
+Shearer.h:16:8: error: unknown type name ‘bool’
+   16 | extern bool cameraEnabled;
+      |        ^~~~
+Utils.c: In function ‘m_in_U’:
+Utils.c:13:30: warning: implicit declaration of function ‘readTemperatureSensor’ [-Wimplicit-function-declaration]
+   13 |         double temperature = readTemperatureSensor(/* placeholder */);
+      |                              ^~~~~~~~~~~~~~~~~~~~~
+Utils.c:14:27: warning: implicit declaration of function ‘readPressureSensor’ [-Wimplicit-function-declaration]
+   14 |         double pressure = readPressureSensor(/* placeholder */);
+      |                           ^~~~~~~~~~~~~~~~~~
+Utils.c:17:27: error: ‘THRESHOLD_TEMPERATURE’ undeclared (first use in this function)
+   17 |         if (temperature > THRESHOLD_TEMPERATURE) {              /* Implement corrective action here */
+      |                           ^~~~~~~~~~~~~~~~~~~~~
+Utils.c:17:27: note: each undeclared identifier is reported only once for each function it appears in
+Utils.c:21:24: error: ‘THRESHOLD_PRESSURE’ undeclared (first use in this function)
+   21 |         if (pressure < THRESHOLD_PRESSURE) {            /* Implement safety protocols here */
+      |                        ^~~~~~~~~~~~~~~~~~
+Utils.c:25:9: warning: implicit declaration of function ‘controlThrusters’ [-Wimplicit-function-declaration]
+   25 |         controlThrusters(/* placeholder */);            /* Control CubeSat components (e.g., thrusters, solar panels, etc.) */
+      |         ^~~~~~~~~~~~~~~~
+Utils.c:29:5: warning: implicit declaration of function ‘finalizeCubeSat’ [-Wimplicit-function-declaration]
+   29 |     finalizeCubeSat(/* placeholder */);         /* Cleanup and finalize CubeSat operations */
+      |     ^~~~~~~~~~~~~~~
+In file included from Sender_and_Receiver.c:6:
+Shearer.h:14:8: error: unknown type name ‘bool’
+   14 | extern bool communicationEnabled;
+      |        ^~~~
+Shearer.h:15:8: error: unknown type name ‘bool’
+   15 | extern bool thrustersEnabled;
+      |        ^~~~
+Shearer.h:16:8: error: unknown type name ‘bool’
+   16 | extern bool cameraEnabled;
+      |        ^~~~
+Sender_and_Receiver.c: In function ‘m_Sender_n_receiver’:
+Sender_and_Receiver.c:28:41: error: expected ‘;’ before ‘}’ token
+   28 |         usleep(SLEEP_INTERVAL_SECONDS_U)
+      |                                         ^
+      |                                         ;
+   29 |     }
+      |     ~                                    

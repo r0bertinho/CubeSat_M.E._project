@@ -16,8 +16,18 @@ Run = int(check_output(["in_mission", Path_to_C_script], universal_newlines=True
 
 
 #Here will go the data analisys and generating a file with it
-def analise_data():
-    pass
+def analise_data(Fnum):
+    
+    # Opening the file of data
+    open("data" + Fnum + ".txt", "x")
+    
+    with open("data" + Fnum + ".txt", "w") as Df:
+    Df.write(
+        # Here will go the data analisys
+        
+
+        )
+    Df.close() # Closing the file
 
 
 # Loop(put here all of the data analisys)

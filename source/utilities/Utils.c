@@ -6,28 +6,19 @@
 #include "Shearer.h"
 
 
-int m_in_U()		/* Initialize CubeSat hardware and sensors */
-{
-    if (initializeCubeSat() != 0)
-	{
-        printf("Error initializing CubeSat hardware.\n");
-        return 1;
-    }
+int m_in_U () {		/* Initialize CubeSat hardware and sensors */
 
  		   /* Main loop for CubeSat operations */
-    while (in_mission == 1)		/* Read sensor data (e.g., temperature, pressure, etc.) */
-	{
+    while (in_mission == 1) {		/* Read sensor data (e.g., temperature, pressure, etc.) */
         double temperature = readTemperatureSensor(/* placeholder */);
         double pressure = readPressureSensor(/* placeholder */);
 
       		  /* Process sensor data and make decisions */
-        if (temperature > THRESHOLD_TEMPERATURE)		/* Implement corrective action here */
-		{
+        if (temperature > THRESHOLD_TEMPERATURE) {		/* Implement corrective action here */
             printf("Temperature is too high. Taking corrective action...\n");
         }
 
-        if (pressure < THRESHOLD_PRESSURE)		/* Implement safety protocols here */
-		{
+        if (pressure < THRESHOLD_PRESSURE) {		/* Implement safety protocols here */
             printf("Low pressure detected. Initiating safety protocols...\n");
         }
 
@@ -35,7 +26,6 @@ int m_in_U()		/* Initialize CubeSat hardware and sensors */
 
         sleep(SLEEP_INTERVAL_SECONDS_U);		/* Sleep for a while before the next iteration */
     }
-
     finalizeCubeSat(/* placeholder */);		/* Cleanup and finalize CubeSat operations */
     return 0;
 }

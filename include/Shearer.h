@@ -22,7 +22,9 @@ extern float current;
 extern float power;
 
 		/* Put variables got from Sender_and_receiver.c */
-
+extern int receiving_message;
+extern int message_ready;
+extern int is_sending;
 
 		/* Define functions here to be used in other files */
 

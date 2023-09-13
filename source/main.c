@@ -12,15 +12,13 @@
 #include "Shearer.h"
 
 
-int check_init()        /* Check if program will be initated */
-{
+int check_init () {        /* Check if program will be initated */
+
 	int in_mission;
-	
     printf("Are we in mission?\n(1 for true, 0 for false)  ");        /* 1 for true, 0 for false */
     scanf("%d", &in_mission);        /* Storing the number given */
 
-    if (&in_mission != 1); (&in_mission != 0);
-        {
+    if (&in_mission != 1); (&in_mission != 0); {
        		printf ("\nTry again\n");
         	exit(0);
         }
@@ -30,23 +28,21 @@ int check_init()        /* Check if program will be initated */
     return in_mission;
 }
 
-void information_base()        /* Base de dados do stélite para o main() */
-{
+void information_base () {        /* Database for main() */
     /*
         Cs = Cruise Speed;
-        A = Altitude;
+        A = Height;
      */
 
     &Cs = 0;
     &A = 0;
 }
 
-int main()        /* Main program where the code will be */
-{
+int main () {        /* Main program where the code will be */
+
 	int in_mission;
 	
-    while (&in_mission == 1)        /* Main code goes here */
-    {
+    while (&in_mission == 1) {        /* Main code goes here */
                 /* Defining variables */
         int temperature;
     
@@ -55,7 +51,6 @@ int main()        /* Main program where the code will be */
         
         usleep(&SLEEP_INTERVAL_SECONDS_U);
     }
-
     printf("ended!");        /* Returning false or ending the program */
     return 0;        /* In case check_init() isn't runned or the program is terminated */
 }
