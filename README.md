@@ -1,4 +1,4 @@
-
+![sat](https://github.com/r0bertinho/CubeSat_M.E._project/assets/112725039/4e6ac72f-6744-4d60-964a-695ac17ec310)
 
 As the title says, this is a project initiated in C.E.D. Myriam Ervilha;
 
