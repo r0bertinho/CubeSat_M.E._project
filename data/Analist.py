@@ -1,9 +1,7 @@
 # Importing just what is needed to run the code
-from time import sleep
-from shutil import move, delete
-from subprocess import check_output
-from os.path import join
-from os import getcwd
+from time import sleep; from shutil import move, delete
+from subprocess import check_output; from os.path import join
+from os import getcwd; from datetime import datetime
 
 # Setting basis
 Dir = getcwd()
@@ -13,31 +11,45 @@ Path_to_Get_Sensor = join(Dir, 'source/sensors/GetSensors.c') # Path to the rece
 Path_to_S_and_R = join(Dir, 'source/communication/Sender_and_Receiver.c') # Path to the receptor
 
 # Getting information from Shearer.h
-Run = int(check_output(["in_mission", Path_to_C_script], universal_newlines=True))
+RunIN = int(check_output(["in_mission", Path_to_C_script], universal_newlines=True))
 
 
 #Here will go the data analisys and generating a file with it
-def analise_data(Fnum):
+class analise_data:
     
     # Opening the file of data
-    open("data_" + Fnum + ".txt", "x")
+    def create_file(Fnum):
+        open("data_" + Fnum + ".txt", "x")
     
-    with open("data_" + Fnum + ".txt", "w") as Df:
-        Df.write(
-          # Here will go the data analisys
-        
+    
+    def write_data(time, extra, Fnum):
+        with open("data_" + Fnum + ".txt", "w") as Df:
+            Df.write(
+            # Here will go the data analisys
+            time,
+            extra
+            )
+            Df.close() # Closing the file
 
-        )
-        Df.close() # Closing the file
 
 # Setting variables before the loop
 NumOfFiles = 1
 
 # Loop(put here all of the data analisys)
-while Run == 1:
+while RunIN == 1:
+
+    # Getting the date and time
+    minutes = datetime.now().strftime("%M")
+    hour = datetime.now().strftime("%H")
+    day = datetime.now().strftime("%d")
+    month = datetime.now().strftime("%m")
+    year = datetime.now().strftime("%Y")
 
     # Analysing the data
-    analise_data(NumOfFiles)
+    analise_data.create_file(str(NumOfFiles))
+    analise_data.write_data(
+        str(minutes) + " " + str(hour) + " " + str(day) + " " + str(month) + " " + str(year)
+    )
 
     # Setting variables
     Time_to_wait = 5  # in seconds 1h = 3600
@@ -49,7 +61,7 @@ while Run == 1:
     sleep(Time_to_wait)
 
     # Put here something to know the code ended or make the loop redo some times
-    Run = int(check_output(["in_mission", Path_to_C_script], universal_newlines=True))
+    RunIN = int(check_output(["in_mission", Path_to_C_script], universal_newlines=True))
 
     # Deleting the file to save SPACE before replacing the analisys number
     delete("data_" + str(NumOfFiles) + ".txt")
