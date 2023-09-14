@@ -1,4 +1,4 @@
-# Importing just what is needed to run the code
+# Importing just what is needed to run the code (2 per line)
 from time import sleep; from shutil import move, delete
 from subprocess import check_output; from os.path import join
 from os import getcwd; from datetime import datetime
@@ -19,11 +19,11 @@ class analise_data:
     
     # Opening the file of data
     def create_file(Fnum):
-        open("data_" + Fnum + ".txt", "x")
+        open("data_" + Fnum + ".json", "x")
     
     
     def write_data(time, extra, Fnum):
-        with open("data_" + Fnum + ".txt", "w") as Df:
+        with open("data_" + Fnum + ".json", "w") as Df:
             Df.write(
             # Here will go the data analisys
             time,
@@ -48,8 +48,10 @@ while RunIN == 1:
     # Analysing the data
     analise_data.create_file(str(NumOfFiles))
     analise_data.write_data(
-        str(minutes) + " " + str(hour) + " " + str(day) + " " + str(month) + " " + str(year)
-    )
+        time=(str(minutes) + " " 
+        + str(hour) + " " + str(day) + "-" 
+        + str(month) + "-" + str(year)
+    ))
 
     # Setting variables
     Time_to_wait = 5  # in seconds 1h = 3600
