@@ -28,7 +28,8 @@ typedef struct {
 
 
 void readSensors (EnvironmentalSensor *envSensor, PowerSensor *powerSensor) {
-			/* Reading data from environmental and power sensors */
+			/* Reading data from environmental and power sensors 
+			(note that those are hipotethical numbers, sir!) */
 	envSensor->temperature = 25.0;
 	envSensor->humidity = 50.0;
 	envSensor->pressure = 1013.25;
