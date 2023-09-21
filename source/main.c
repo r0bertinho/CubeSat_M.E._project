@@ -1,6 +1,6 @@
 /* Notes:
-- This file uses  Tabs / 4 / No wrap
-- Remember to see Blame (in github)
+!- This file uses  Tabs / 4 / No wrap
+!- Remember to see Blame (in github)
 - Try your best to keep the code clean
 - Keep it with comments for easy understanding
 - Comments are made this way(the slash and star doens't have a space): / *  * /

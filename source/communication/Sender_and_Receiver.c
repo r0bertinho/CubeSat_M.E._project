@@ -1,9 +1,10 @@
 /*
-- This file uses  Tabs / 4 / No wrap
+!- This file uses  Tabs / 4 / No wrap
 */
 #include <stdio.h>
 #include <unistd.h>
 #include "Shearer.h"
+
 
 typedef struct {
     /* Here we'll put the binary variables
@@ -13,18 +14,33 @@ typedef struct {
 	int is_sending;
 } Messages;
 
+
+/* Here will go the function to send a message */
+int send_message () {
+    return 0;
+}
+
+
+void communicateWithSatellite () {
+
+            /* Start by here! Put things like variables, paths, etc... */
+    printf("Communicating with satellite...\n");
+    printf("Message received from satellite: Hello, Earth!\n");
+}
+
+
+int m_in_main () {        /* Here will go the main tasks */
+    
+    return 0;
+}
+
+
+/* Main for this file */
 void m_Sender_n_receiver () {
+
     while (in_mission == 1) {
-        void communicateWithSatellite () {
-                    /* Start by here! Put things like variables, paths, etc... */
-            printf("Communicating with satellite...\n");
-            printf("Message received from satellite: Hello, Earth!\n");
-        }
        
-        int m_in_main () {        /* This is where we make it actually work. */
-            communicateWithSatellite();
-            return 0;
-        }
+        
         usleep(SLEEP_INTERVAL_SECONDS_U)
     }
 }

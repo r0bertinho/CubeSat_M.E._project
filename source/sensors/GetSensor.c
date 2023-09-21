@@ -1,5 +1,5 @@
 /*
-- This file uses  Tabs / 4 / No wrap
+!- This file uses  Tabs / 4 / No wrap
 */
 #include <stdio.h>
 #include <stdint.h>
@@ -29,7 +29,7 @@ typedef struct {
 
 void readSensors (EnvironmentalSensor *envSensor, PowerSensor *powerSensor) {
 			/* Reading data from environmental and power sensors 
-			(note that those are hipotethical numbers, sir!) */
+			!(note that those are hipotethical numbers, sir!) */
 	envSensor->temperature = 25.0;
 	envSensor->humidity = 50.0;
 	envSensor->pressure = 1013.25;
