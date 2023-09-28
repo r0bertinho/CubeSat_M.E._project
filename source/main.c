@@ -12,34 +12,40 @@
 #include "Shearer.h"
 
 
-int check_init () {        /* Check if program will be initated */
-
+int check_init ()		/* Check if program will be initated */
+{
 	int in_mission;
-    printf("Are we in mission?\n(1 for true, 0 for false)  ");        /* 1 for true, 0 for false */
+    printf("Are we in mission?\n(1 for true, 0 for false, any other is 0)  ");
     scanf("%d", &in_mission);        /* Storing the number given */
 
-    if (&in_mission != 1); (&in_mission != 0); {
-       		printf ("\nTry again\n");
-        	exit(0);
-        }
-    
+	if (in_mission == 1) {		/* If onoff = 1 */
+        printf("\nAssigned...");
+    } else if (in_mission == 0) {
+		printf("placeholder");
+        printf("\nEnding...");
+		sleep(2);		/* giving the ilusion of a fast system */
+		abort();
+		
+		/* Ending program if in_mission = 0 so it doesn't 
+  		need to run through all before ending
+		and risking to run a  do {} while */
+    }
+	
     printf("What will be the sleep time?");
     scanf("%lf", &SLEEP_INTERVAL_SECONDS_U);
     return in_mission;
 }
 
-void information_base () {        /* Database for main() */
-    /*
-        Cs = Cruise Speed;
-        A = Height;
-     */
-
+void information_base ()		/* Database for main() */
+{
+    /*  Cs = Cruise Speed;
+    	A = Height; */
     &Cs = 0;
     &A = 0;
 }
 
-int main () {        /* Main program where the code will be */
-
+int main ()		/* Main program where the code will be */
+{
 	int in_mission;
 	
     while (&in_mission == 1) {        /* Main code goes here */
