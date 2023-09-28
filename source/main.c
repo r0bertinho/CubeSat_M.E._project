@@ -25,16 +25,18 @@ int check_init ()		/* Check if program will be initated */
         printf("\nEnding...");
 		sleep(2);		/* giving the ilusion of a fast system */
 		abort();
-		
 		/* Ending program if in_mission = 0 so it doesn't 
   		need to run through all before ending
 		and risking to run a  do {} while */
-    } else {abort()}		/* Ending in any other case */
+    } else {
+		abort();
+	}		/* Ending in any other case */
 	
     printf("What will be the sleep time?");
     scanf("%lf", &SLEEP_INTERVAL_SECONDS_U);
     return in_mission;
 }
+
 
 void information_base ()		/* Database for main() */
 {
@@ -43,6 +45,7 @@ void information_base ()		/* Database for main() */
     &Cs = 0;
     &A = 0;
 }
+
 
 int main ()		/* Main program where the code will be */
 {
