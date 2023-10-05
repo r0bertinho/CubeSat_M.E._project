@@ -7,7 +7,7 @@ To achieve this the people in this project were sepparated into some essential p
 
 ```
 To this day, the project include as members:
-- Ian Souza Freire;
+- Ian;
 - Rhamon;
 - Isadora;
 - Juliano;
