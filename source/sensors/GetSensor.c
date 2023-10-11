@@ -1,25 +1,20 @@
-/*
-!- This file uses  Tabs / 4 / No wrap
-*/
 #include <stdio.h>
 #include <stdint.h>
 #include <unistd.h>
 #include <stdbool.h>
 #include "Shearer.h"
 
-		/* Define sensor and component interfaces */
+/* Define sensor and component interfaces */
 typedef struct {
 	float temperature;
 	float humidity;
 	float pressure;
 } EnvironmentalSensor;
-
 typedef struct {
 	float voltage;
 	float current;
 	float power;
 } PowerSensor;
-
 typedef struct {
 	bool cameraEnabled;
 	bool thrustersEnabled;
@@ -27,9 +22,10 @@ typedef struct {
 } ComponentControl;
 
 
-void readSensors (EnvironmentalSensor *envSensor, PowerSensor *powerSensor) {
-			/* Reading data from environmental and power sensors 
-			!(note that those are hipotethical numbers, sir!) */
+void readSensors (EnvironmentalSensor *envSensor, PowerSensor *powerSensor)
+{
+	/* Reading data from environmental and power sensors 
+	!(note that those are hipotethical numbers, sir!) */
 	envSensor->temperature = 25.0;
 	envSensor->humidity = 50.0;
 	envSensor->pressure = 1013.25;
@@ -39,38 +35,43 @@ void readSensors (EnvironmentalSensor *envSensor, PowerSensor *powerSensor) {
 }
 
 
-void controlComponents (ComponentControl *components) {
-			/* Enabling/disabling CubeSat components */
+void controlComponents (ComponentControl *components)
+{
+	/* Enabling/disabling CubeSat components */
 	components->cameraEnabled = true;
 	components->thrustersEnabled = false;
 	components->communicationEnabled = true;
 }
 
-int m_n_GetSensor () {
-
-			/* Main loop */
+int m_n_GetSensor ()
+{
+	/* Main loop */
 	while (in_mission == 1) {
 
- 		   		/* Initialize sensor and component data structures */
+ 		/* Initialize sensor and component data structures */
   		EnvironmentalSensor envSensor;
   		PowerSensor powerSensor;
  		ComponentControl components;
 
-
-		 		/* Read sensor data */
+		/* Read sensor data */
 	 	readSensors(&envSensor, &powerSensor);
 
-				/* Control CubeSat components based on sensor data */
-		if (envSensor.temperature > 30.0) {
-			components.cameraEnabled = false;
-		} else {
-			components.cameraEnabled = true;
+		/* Control CubeSat components based on sensor data */
+		switch (envSensor.temperature) {
+
+			case (envSensor.temperature > 30.0) :
+				components.cameraEnabled = false;
+				break;
+
+			default :
+				components.cameraEnabled = true;
+				break;
 		}
 
-				/* Send control commands to CubeSat components */
+		/* Send control commands to CubeSat components */
 		controlComponents(&components);
 
-   			 	/* Print sensor and component data */
+   		/* Print sensor and component data */
 		printf("Temperature: %.2f°C\n", envSensor.temperature);
 		printf("Humidity: %.2f%%\n", envSensor.humidity);
 		printf("Pressure: %.2f hPa\n", envSensor.pressure);
@@ -78,7 +79,7 @@ int m_n_GetSensor () {
  		printf("Current: %.2f A\n", powerSensor.current);
  		printf("Power: %.2f W\n", powerSensor.power);
 
-  				/* Delay between sensor readings and component control */
+  		/* Delay between sensor readings and component control */
 	 	usleep(SLEEP_INTERVAL_SECONDS_U);
  	}
 	return 0;
