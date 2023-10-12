@@ -2,7 +2,11 @@
 #include <stdint.h>
 #include <unistd.h>
 #include <stdbool.h>
-#include "Shearer.h"
+#include "Mains.h"
+#include "Sensors.h"
+#include "Communicate.h"
+#include "Comm.h"
+#include "Base.h"
 
 /* Define sensor and component interfaces */
 typedef struct {

@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
-#include "Shearer.h"
+#include "Info.h"
+#include "Numbers.h"
+#include "Base.h"
 
 
 int m_in_U ()	// Initialize CubeSat hardware and sensors

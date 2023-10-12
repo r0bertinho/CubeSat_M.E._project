@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include "Shearer.h"
+#include "Info.h"
+#include "Base.h"
 
 
 int check_init ()	// Check if program will be initated

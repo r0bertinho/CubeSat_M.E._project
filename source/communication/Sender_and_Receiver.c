@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <unistd.h>
-#include "Shearer.h"
+#include "Mains.h"
+#include "Sensors.h"
+#include "Communicate.h"
+#include "Comm.h"
+#include "Base.h"
 
 
 typedef struct {
