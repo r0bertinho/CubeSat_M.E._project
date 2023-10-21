@@ -47,44 +47,39 @@ void controlComponents (ComponentControl *components)
 	components->communicationEnabled = true;
 }
 
-int m_n_GetSensor ()
+void m_n_GetSensor ()
 {
-	/* Main loop */
-	while (in_mission == 1) {
+ 	/* Initialize sensor and component data structures */
+  	EnvironmentalSensor envSensor;
+  	PowerSensor powerSensor;
+ 	ComponentControl components;
 
- 		/* Initialize sensor and component data structures */
-  		EnvironmentalSensor envSensor;
-  		PowerSensor powerSensor;
- 		ComponentControl components;
+	/* Read sensor data */
+	readSensors(&envSensor, &powerSensor);
 
-		/* Read sensor data */
-	 	readSensors(&envSensor, &powerSensor);
+	/* Control CubeSat components based on sensor data */
+	switch (envSensor.temperature) {
 
-		/* Control CubeSat components based on sensor data */
-		switch (envSensor.temperature) {
+		case (envSensor.temperature > 30.0) :
+			components.cameraEnabled = false;
+			break;
 
-			case (envSensor.temperature > 30.0) :
-				components.cameraEnabled = false;
-				break;
+		default :
+			components.cameraEnabled = true;
+			break;
+	}
 
-			default :
-				components.cameraEnabled = true;
-				break;
-		}
+	/* Send control commands to CubeSat components */
+	controlComponents(&components);
 
-		/* Send control commands to CubeSat components */
-		controlComponents(&components);
+   	/* Print sensor and component data */
+	printf("Temperature: %.2f°C\n", envSensor.temperature);
+	printf("Humidity: %.2f%%\n", envSensor.humidity);
+	printf("Pressure: %.2f hPa\n", envSensor.pressure);
+	printf("Voltage: %.2f V\n", powerSensor.voltage);
+ 	printf("Current: %.2f A\n", powerSensor.current);
+ 	printf("Power: %.2f W\n", powerSensor.power);
 
-   		/* Print sensor and component data */
-		printf("Temperature: %.2f°C\n", envSensor.temperature);
-		printf("Humidity: %.2f%%\n", envSensor.humidity);
-		printf("Pressure: %.2f hPa\n", envSensor.pressure);
-		printf("Voltage: %.2f V\n", powerSensor.voltage);
- 		printf("Current: %.2f A\n", powerSensor.current);
- 		printf("Power: %.2f W\n", powerSensor.power);
-
-  		/* Delay between sensor readings and component control */
-	 	usleep(SLEEP_INTERVAL_SECONDS_U);
- 	}
-	return 0;
+  	/* Delay between sensor readings and component control */
+	usleep(SLEEP_INTERVAL_SECONDS_U);
 }

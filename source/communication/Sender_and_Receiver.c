@@ -40,7 +40,5 @@ int m_in_SnR ()    // Here will go the main tasks
 /* Main for this file */
 void m_Sender_n_receiver ()
 {
-    while (in_mission == 1) {
-        usleep(SLEEP_INTERVAL_SECONDS_U)
-    }
+    usleep(SLEEP_INTERVAL_SECONDS_U)
 }

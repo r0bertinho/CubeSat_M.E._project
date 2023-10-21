@@ -5,7 +5,7 @@
 #include "Base.h"
 
 
-int m_in_U ()	// Initialize CubeSat hardware and sensors
+void m_in_U ()	// Initialize CubeSat hardware and sensors
 {
  	/* Main loop for CubeSat operations */
     while (in_mission == 1) {	// Read sensor data
@@ -37,5 +37,4 @@ int m_in_U ()	// Initialize CubeSat hardware and sensors
         sleep(SLEEP_INTERVAL_SECONDS_U);	// Sleep for a while before the next iteration
     
     finalizeCubeSat();	// Cleanup and finalize CubeSat operations
-    return 0;
 }
