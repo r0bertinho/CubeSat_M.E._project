@@ -1,0 +1,22 @@
+# Defining the license
+VERSION 				= 		0.7.5
+PATCHLEVEL 				= 		0
+NAME 					= 		CubeSat_project
+
+# Defining walls
+Cflags 					:= 		-I source -ffreestanding -Wall
+
+# Defining C files
+build_files 			:= 		$(shell find source -name '*.o')
+
+
+# Defining all object files
+object_files 			:=  	$(c_object_files)
+
+
+# Defining the ignored files
+IGNORED_FILES_MD  		:= 		$(patsubst find source/ -name '*.md', $(shell find src -type f -name '*.md'))
+IGNORED_FILES_TXT 		:= 		$(patsubst find source/ -name '*.txt', $(shell find src -type f -name '*.txt'))
+IGNORED_FILES_UNBUILD   := 		$(patsubst find source/ -name '*.c', $(shell find src -type f -name '*.c'))
+IGNORED_FILES 			:= 		$(IGNORED_FILES_MD) $(IGNORED_FILES_TXT)
+
