@@ -20,10 +20,11 @@ int check_init ()	// Check if program will be initated
         /* To impede the program from
         running any do {} while */
         case 0:
-            printf("placeholder");
-            printf("\nEnding...");
-            sleep(2);
-            abort();
+            try {
+				exit()
+			} catch (EXIT_FAILURE) {
+				abort()
+			}
             break;
         default:
             abort();
