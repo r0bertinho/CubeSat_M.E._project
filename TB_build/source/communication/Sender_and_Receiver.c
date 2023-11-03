@@ -16,7 +16,7 @@ typedef struct {
 } Messages;
 
 
-/* Here will go the function to send a message */
+// Here will go the function to send a message
 int send_message ()
 {
     return 0;
@@ -25,13 +25,13 @@ int send_message ()
 
 void communicateWithSatellite ()
 {
-    /* Start by here! Put things like variables, paths, etc... */
+    // Start by here! Put things like variables, paths, etc...
     printf("Communicating with satellite...\n");
     printf("Message received from satellite: Hello, Earth!\n");
 }
 
 
-int m_in_SnR ()    // Here will go the main tasks
+int m_in_SnR () // Here will go the main tasks
 {
     return 0;
 }
@@ -39,6 +39,5 @@ int m_in_SnR ()    // Here will go the main tasks
 
 /* Main for this file */
 void m_Sender_n_receiver ()
-{
-    usleep(SLEEP_INTERVAL_SECONDS_U)
+{ NULL; // Fill later
 }

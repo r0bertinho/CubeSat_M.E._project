@@ -7,7 +7,7 @@
 
 int check_init () // Check if program will be initated
 {
-    printf("Are we in mission?\n(1 for true, 0 for false, any other is 0)  ");
+    printf("Are we in mission?\n(1 for true, 0 for false)  ");
     // Storing the number given onto the variable from "Base.h"
     scanf("%d", &in_mission);
 
@@ -28,7 +28,24 @@ int check_init () // Check if program will be initated
 	
     printf("What will be the sleep time?");
     scanf("%lf", &SLEEP_INTERVAL_SECONDS_U);
-    return in_mission;
+
+    switch (SLEEP_INTERVAL_SECONDS_U) {
+
+        case &SLEEP_INTERVAL_SECONDS_U < 0: //! I don't know how to do this without an error
+            printf("Assigning default value...\n");
+            &SLEEP_INTERVAL_SECONDS_U = 1.0; //TODO: Set to 0.2 seconds
+            break;
+
+        default:
+            try {
+                exit(1);
+            } catch (EXIT_FAILURE) {
+                abort();
+            }
+            break;
+    }
+
+    return 0;
 }
 
 
