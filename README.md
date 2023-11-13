@@ -25,3 +25,5 @@ To this day, the project include as members:
 ![WhatsApp Image 2023-09-07 at 13 25 35](https://github.com/r0bertinho/CubeSat_M.E._project/assets/112725039/56277edb-7c92-41b1-938f-4c90e79da68c)
 ![WhatsApp Image 2023-09-07 at 13 25 34](https://github.com/r0bertinho/CubeSat_M.E._project/assets/112725039/d6237246-4d5c-4005-9bb4-3f69e8a20cfa)
 ![WhatsApp Image 2023-09-07 at 13 25 27](https://github.com/r0bertinho/CubeSat_M.E._project/assets/112725039/3c75b562-6ac3-458e-84fd-32c74ecffde6)
+
+# 
