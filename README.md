@@ -22,7 +22,7 @@ To this day, the project include as members: <br> Até hoje, o projeto tem como 
 
 ## Images of our group: <br> Imagens do grupo:
 
-<div>
+<div align="center">
   <p>
     From left to right, the people are, respectively: <br> Da esquerda para a direita, as pessoas são, respectivamente:<br>
     Rhamon; Juliano; Mariana; Isadora; Kay; Ian.
