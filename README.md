@@ -26,7 +26,7 @@ To this day, the project include as members: <br> Até hoje, o projeto tem como 
 
 <div align="center">
   
-## Images of our group: <br> Imagens do grupo:
+# Images of our group: <br> Imagens do grupo:
 
 </div>
 
