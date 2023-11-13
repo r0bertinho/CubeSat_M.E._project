@@ -8,12 +8,12 @@
 To achieve this the people in this project were sepparated into some essential parts that will be used.
 ```
 To this day, the project include as members:
-- Ian;
-- Rhamon;
-- Isadora;
-- Juliano;
-- Mari;
-- Kay.
+* **Ian**;
+* **Rhamon**;
+* **Isadora**;
+* **Juliano**;
+* **Mari**;
+* **Kay**.
 ```
 
 ## Images of our group:
