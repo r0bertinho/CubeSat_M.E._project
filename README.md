@@ -27,9 +27,9 @@ To this day, the project include as members:
 ## Imagens do grupo:
 ## Images of our group:
 
-<div align="center">
-  <p fontsize=32px>
-    From left to right, the people are, respectively: <br />
+<div>
+  <p>
+    From left to right, the people are, respectively: <br>
     Rhamon; Juliano; Mariana; Isadora; Kay; Ian.
   </p>
 </div>
