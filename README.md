@@ -5,7 +5,7 @@
 
 # 
 
-# This is a project initiated in C.E.D. Myriam Ervilha; // Esse projeto foi iniciado na C.E.D Myriam Ervilha;
+# This is a project initiated in C.E.D. Myriam Ervilha; <br> Esse projeto foi iniciado na C.E.D Myriam Ervilha;
 
 ## It's has as it's central point to create a code for a CubeSat to work smoothly. // O ponto central é criar um código em que um CubeSat possa ser utilizado.
 
