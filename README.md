@@ -20,12 +20,19 @@ To this day, the project include as members:
 2. Rhamon;
 3. Isadora;
 4. Juliano;
-5. Mari;
+5. Mariana;
 6. Kay.
 ```
 
 ## Imagens do grupo:
 ## Images of our group:
+
+<div align="center">
+  <p fontsize=32px>
+    From left to right, the people are, respectively: <br />
+    Rhamon; Juliano; Mariana; Isadora; Kay; Ian.
+  </p>
+</div>
 
 <body align="center" display="flex">
   <img src="https://github.com/r0bertinho/CubeSat_M.E._project/assets/112725039/d7605677-341e-4f93-a356-f6f5d66c099c" style="width:100%;height:auto;"/>
