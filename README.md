@@ -5,11 +5,11 @@
 
 # 
 
-<container align="center">
+<div align="center">
   # This is a project initiated in C.E.D. Myriam Ervilha; <br> Esse projeto foi iniciado na C.E.D Myriam Ervilha;
 
   ## It's has as it's central point to create a code for a CubeSat to work smoothly. <br> O ponto central é criar um código em que um CubeSat possa ser utilizado.
-</container>
+</div>
 
 To achieve this the people in this project were sepparated into some essential parts that will be used. <br> Para conseguir isso, cada participante se especializará em uma área.
 ```
@@ -22,16 +22,16 @@ To this day, the project include as members: <br> Até hoje, o projeto tem como 
 6. Kay.
 ```
 
-<container align="center">
+<div align="center">
   ## Images of our group: <br> Imagens do grupo:
-</container>
+</div>
 
-<container align="center">
+<div align="center">
   <p align="center">
     From left to right, the people are, respectively: <br> Da esquerda para a direita, as pessoas são, respectivamente:<br>
     Rhamon; Juliano; Mariana; Isadora; Kay; Ian.
   </p>
-</container>
+</div>
 
 <body align="center" display="flex">
   <img src="https://github.com/r0bertinho/CubeSat_M.E._project/assets/112725039/d7605677-341e-4f93-a356-f6f5d66c099c" style="width:100%;height:auto;"/>
