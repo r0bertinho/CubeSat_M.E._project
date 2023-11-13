@@ -5,9 +5,11 @@
 
 # 
 
-# This is a project initiated in C.E.D. Myriam Ervilha; <br> Esse projeto foi iniciado na C.E.D Myriam Ervilha;
+<div align="center">
+  # This is a project initiated in C.E.D. Myriam Ervilha; <br> Esse projeto foi iniciado na C.E.D Myriam Ervilha;
 
-## It's has as it's central point to create a code for a CubeSat to work smoothly. <br> O ponto central é criar um código em que um CubeSat possa ser utilizado.
+  ## It's has as it's central point to create a code for a CubeSat to work smoothly. <br> O ponto central é criar um código em que um CubeSat possa ser utilizado.
+</div>
 
 To achieve this the people in this project were sepparated into some essential parts that will be used. <br> Para conseguir isso, cada participante se especializará em uma área.
 ```
@@ -20,7 +22,9 @@ To this day, the project include as members: <br> Até hoje, o projeto tem como 
 6. Kay.
 ```
 
-## Images of our group: <br> Imagens do grupo:
+<div align="center">
+  ## Images of our group: <br> Imagens do grupo:
+</div>
 
 <div align="center">
   <p align="center">
