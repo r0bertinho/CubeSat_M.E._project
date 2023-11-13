@@ -1,4 +1,8 @@
-<a title="CubeSat" align="center"><img src="https://github.com/r0bertinho/CubeSat_M.E._project/assets/112725039/4e6ac72f-6744-4d60-964a-695ac17ec310" /></a>
+<div align="center">
+  <a title="CubeSat">
+    <img src="https://github.com/r0bertinho/CubeSat_M.E._project/assets/112725039/4e6ac72f-6744-4d60-964a-695ac17ec310"/>
+  </a>
+</div>
 
 # 
 
