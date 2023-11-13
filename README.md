@@ -20,7 +20,7 @@ To this day, the project include as members:
 
 ## Images of our group:
 
-<div align="center" height=128px width=256>
+<div align="center" height=128px width=256px>
   <img src="https://github.com/r0bertinho/CubeSat_M.E._project/assets/112725039/d7605677-341e-4f93-a356-f6f5d66c099c"/>
   <img src="https://github.com/r0bertinho/CubeSat_M.E._project/assets/112725039/56277edb-7c92-41b1-938f-4c90e79da68c"/>
   <img src="https://github.com/r0bertinho/CubeSat_M.E._project/assets/112725039/d6237246-4d5c-4005-9bb4-3f69e8a20cfa"/>
