@@ -59,7 +59,7 @@ void information_base () // Database for main ()
 }
 
 
-int main (void)	// Main program where the code will be
+int main (int argc, char *argv[])	// Main program where the code will be
 {
     while (&in_mission == 1) { // Main code goes here
         // Defining variables
