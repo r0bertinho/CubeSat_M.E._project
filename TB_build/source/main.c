@@ -23,7 +23,6 @@ int check_init () // Check if program will be initated
             } catch (EXIT_FAILURE) {
                 abort();
             }
-            break;
     }
 	
     printf("What will be the sleep time?");
@@ -42,7 +41,6 @@ int check_init () // Check if program will be initated
             } catch (EXIT_FAILURE) {
                 abort();
             }
-            break;
     }
 
     return 0;

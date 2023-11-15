@@ -49,6 +49,9 @@ void controlComponents (ComponentControl *components)
 
 void m_n_GetSensor ()
 {
+	// Pick structure from Base.h
+    struct inutilizeds inut;
+
  	/* Initialize sensor and component data structures */
   	EnvironmentalSensor envSensor;
   	PowerSensor powerSensor;
@@ -62,11 +65,12 @@ void m_n_GetSensor ()
 
 		case (envSensor.temperature > 30.0) :
 			components.cameraEnabled = false;
+			inut.inut_n3 = 0;
 			break;
 
 		default :
 			components.cameraEnabled = true;
-			break;
+			inut.inut_n3 = 1;
 	}
 
 	/* Send control commands to CubeSat components */

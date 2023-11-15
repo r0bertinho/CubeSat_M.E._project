@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
 #include "Mains.h"
-#include "Sensors.h"
-#include "Communicate.h"
-#include "Comm.h"
 #include "Base.h"
-
+#include "Messages.h"
 
 typedef struct {
     /* Here we'll put the binary variables
@@ -34,10 +31,4 @@ void communicateWithSatellite ()
 int m_in_SnR () // Here will go the main tasks
 {
     return 0;
-}
-
-
-/* Main for this file */
-void m_Sender_n_receiver ()
-{ NULL; // Fill later
 }
