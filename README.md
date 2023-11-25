@@ -15,7 +15,7 @@
 
 To achieve this the people in this project were sepparated into some essential parts that will be used. <br> Para conseguir isso, cada participante se especializará em uma área.
 ```
-To this day, the project include as members: <br> Até hoje, o projeto tem como participantes:
+To this day, the project include as members: Até hoje, o projeto tem como participantes:
 1. Ian;
 2. Rhamon;
 3. Isadora;
