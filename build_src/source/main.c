@@ -4,6 +4,27 @@
 #include "Info.h"
 #include "Base.h"
 
+int abrmn(int boolvar) {
+    switch (boolvar) {
+        case 1:
+            break;
+        // Impede the program from running  A N Y  F U R T H E R
+        default:
+            try {
+                exit(1);
+            } catch (EXIT_FAILURE) {
+                try {
+                    abort();
+                } catch (ABORT_FAILURE) {
+                    while (1==1 && 2>1) {
+                        __asm__("_start:\n""\thlt\n""\tret\n""\tjmp _start\n");
+                    }
+                }
+            }
+        
+    }
+    return 1;
+}
 
 int check_init () // Check if program will be initated
 {
@@ -11,19 +32,7 @@ int check_init () // Check if program will be initated
     // Storing the number given onto the variable from "Base.h"
     scanf("%d", &in_mission);
 
-    switch (in_mission) {
-        case 1:
-            printf("\nAssigned...\n");
-            break;
-            
-        // To impede the program from running any do{}while();
-        default:
-            try {
-                exit(1);
-            } catch (EXIT_FAILURE) {
-                abort();
-            }
-    }
+    abrmn(in_mission);
 	
     printf("What will be the sleep time?");
     scanf("%lf", &SLEEP_INTERVAL_SECONDS_U);
